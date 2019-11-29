@@ -516,7 +516,14 @@ input:-webkit-autofill:active {
 }
 
 .sponsors__brand {
-  text-align: center;
+    text-align: center; 
+    width: 60%;
+    height: 4.688rem;
+    margin: 10% auto;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .sponsors__brand img {
