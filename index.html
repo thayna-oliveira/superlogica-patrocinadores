@@ -76,19 +76,19 @@
       href="assets/css/bootstrap/bootstrap-grid.min.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-
+    
+    <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap CSS -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <script text="javascript" src="assets/js/app.js"></script>
+
+   
     <!-- typekit - fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/jfi0zzh.css" />
-
-    <!-- typekit - fonts -->
     <link rel="stylesheet" href="./assets/fonts/integral-cf-heavy.css" />
-    <!-- typekit - fonts -->
     <link rel="stylesheet" href="./assets/fonts/integral-cf-medium.css" />
 
-    <!-- Javascript -->
-    <script text="javascript" src="assets/js/app.js"></script>
   </head>
 
   <body>
@@ -128,7 +128,7 @@
                   <div class="countdown__time" id="minutes">12</div>
                   <span class="countdown__description">minutos</span>
                 </div>
-                <div class="countdown__box">
+                <div class="countdown__box d-none d-sm-block d-md-block">
                   <div class="countdown__time" id="seconds">12</div>
                   <span class="countdown__description">segundos</span>
                 </div>
@@ -147,7 +147,7 @@
 
     <div class="hero__bg z-0"></div>
 
-    <section class="section background-light">
+    <section class="section background-light" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-5 mr-auto title">
@@ -213,7 +213,7 @@
             <div class="icons">
               <img src="./assets/image/people.svg" />
               <h3 class="icons__title mt-5">6000 Participantes</h3>
-              <p class="icons__description m-0">
+              <p class="icons__description">
                 Conecte-se com gente do Brasil inteiro! Com mais de 63% do
                 público composto por decisores, o Superlógica Xperience é a sua
                 chance de entrar de vez na era da experiência.
@@ -225,7 +225,7 @@
             <div class="icons">
               <img src="./assets/image/calendar.svg" />
               <h3 class="icons__title mt-5">2 dias de evento</h3>
-              <p class="icons__description m-0">
+              <p class="icons__description">
                 Totalizando mais de 70 horas de conteúdo em diversas trilhas de
                 conteúdo com palestras das maiores autoridades em experiência do
                 cliente.
@@ -237,7 +237,7 @@
             <div class="icons">
               <img src="./assets/image/note.svg" />
               <h3 class="icons__title mt-5">Conteúdo segmentado</h3>
-              <p class="icons__description m-0">
+              <p class="icons__description">
                 Assinaturas, Imobiliárias e Condominial. O Superlógica Xperience
                 traz conteúdo, cases e metodologias específicas para solucionar
                 as dores e obter sucesso de cada segmento presente no evento.
@@ -259,7 +259,7 @@
               O Superlógica Xperience propõe uma nova era de experiência ao
               cliente. Seja parte disso.
             </p>
-            <button class="button-primary">Fale com um consultor</button>
+            <a href="#contact" class="btn button-primary">Fale com um consultor</a>
           </div>
         </div>
       </div>
@@ -276,25 +276,25 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-2 ">
+          <div class="col-4 col-lg-2 ">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/pjbank.svg" alt="PJBank" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/elo.svg" alt="Elo" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/enotas.svg" alt="Enotas" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/rockcontent.svg"
@@ -303,31 +303,31 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/ativy.svg" alt="Ativy" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/sankhya.svg" alt="Sankhya" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/sensedata.svg" alt="Sensedata" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/envo.svg" alt="Envo" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/freshworks.svg"
@@ -336,13 +336,13 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/RITS.svg" alt="RITS" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/bomcontrole.png"
@@ -351,13 +351,13 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/mapfre.png" alt="Mapfre" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/leadlovers.png"
@@ -366,79 +366,79 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/mlabs.png" alt="MLabs" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/bcredi.png" alt="BCredi" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/feedz.png" alt="Feedz" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/kinghost.png" alt="kinghost" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/dino.png" alt="Dino" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
-              <img src=" " alt="GrowthLabs" />
+              <img src="assets/image/sponsors/growthlabs.png" alt="GrowthLabs" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/hubspot.png" alt="Hubspot" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/ingaia.png" alt="InGaia" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/hostgator.png" alt="Hostgator" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/condomob.png" alt="CondoMob" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/solides.png" alt="Solides" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/sciensa.png" alt="Sciensa" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/campinastech.png"
@@ -447,7 +447,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/accountify.png"
@@ -456,31 +456,31 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/goonwoman.png" alt="GoonWoman" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/haprojet.png" alt="HaProjet" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/motor.png" alt="Motor" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/inovyo.png" alt="Inovyo" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/teamCulture.svg"
@@ -489,25 +489,25 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/Peral.png" alt="Peral" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/magikey.svg" alt="Magikey" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/aws.svg" alt="AWS" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img
                 src="assets/image/sponsors/voicercore.svg"
@@ -516,255 +516,250 @@
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/octadesk.svg" alt="OctaDesk" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/wezen.svg" alt="wezen" />
             </div>
           </div>
 
-
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/ligai.png" alt="Ligai" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/smartx.svg" alt="Smart X" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/assert.png" alt="Assert" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/kiper.svg" alt="Kiper" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/Syhus.svg" alt="Syhus" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/uplexis.svg" alt="Up Lexis" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/Hi.svg" alt="Hi platform" />
             </div>
           </div>
 
-
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/linkapi.svg" alt="Link api" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/nvoip.svg" alt="Nvoip" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/RDStation.svg" alt="RD Station" />
             </div>
           </div>
 
-
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/umovme.svg" alt="U Mov Me" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/zendesk.svg" alt="zendesk" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/castelo.svg" alt="Castelo" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/buscarid.svg" alt="buscarid" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/sensedia.svg" alt="Sensedia" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/treasy.svg" alt="Treasy" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/rivendel.svg" alt="Rivendel" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
-              <img src="assets/image/sponsors/venturehub.svg" alt="Venture Hub" />
+              <img
+                src="assets/image/sponsors/venturehub.svg"
+                alt="Venture Hub"
+              />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/advice.svg" alt="Advice" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/pulses.svg" alt="Pulses" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
-              <img src="assets/image/sponsors/mundi.svg" alt="Mundi" />
+              <img src="assets/image/sponsors/mundi.png" alt="Mundi" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/coblue.svg" alt="CoBlue" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/nectarCRM.svg" alt="NectarCRM" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/estabilis.svg" alt="Estabilis" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/reev.svg" alt="Reev" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
-              <img src="assets/image/sponsors/supersonic.svg" alt="Supersonic" />
+              <img
+                src="assets/image/sponsors/supersonic.svg"
+                alt="Supersonic"
+              />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/tracksale.svg" alt="Tracksale" />
             </div>
           </div>
 
-
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/shawee.svg" alt="Shawee" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/dextra.svg" alt="Dextra" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
-              <img src="assets/image/sponsors/compass.svg" alt="Compass" />
+              <img src="assets/image/sponsors/conpass.svg" alt="Conpass" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/ramper.svg" alt="Ramper" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/mblabs.png" alt="MB Labs" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/99Corp.svg" alt="99 Corp" />
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/sebrae.svg" alt="Sebrae" />
             </div>
           </div>
 
-          <div class="col-lg-2 ml-auto">
+          <div class="col-4 col-lg-2 ml-auto">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/skyone.svg" alt="Skyone" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/base.png" alt="Base" />
             </div>
           </div>
 
-          <div class="col-lg-2">
+          <div class="col-4 col-lg-2">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/weme.svg" alt="Weme" />
             </div>
           </div>
 
-          <div class="col-lg-2 mr-auto">
+          <div class="col-4 col-lg-2 mr-auto">
             <div class="sponsors__brand">
               <img src="assets/image/sponsors/claro-net.png" alt="Claro/Net" />
             </div>
           </div>
-
-
-
-
-
-
-
         </div>
       </div>
     </section>
