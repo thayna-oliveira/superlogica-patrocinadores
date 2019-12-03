@@ -337,7 +337,7 @@ select {
   color: #1e232c !important;
 }
 
-/* form input */ 
+/* form input */
 
 input[name="firstname"] {
   background-image: url(../icons/smile.svg);
@@ -356,7 +356,7 @@ input[name="company"] {
 }
 
 input[name="cargo"] {
-  background-image: url(../icons/team.svg); 
+  background-image: url(../icons/team.svg);
 }
 
 label.hs-error-msg {
