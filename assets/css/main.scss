@@ -1,4 +1,5 @@
 /* base */
+
 html,
 body {
   overflow-x: hidden;
@@ -14,24 +15,27 @@ body {
 }
 
 /* footer */
+
 .footer {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1.5rem;
-}
-.footer p {
-  margin: 0;
-}
-.footer svg {
-  margin-right: 18px;
-}
-.footer svg g {
-  transition: 200ms;
-}
-.footer svg:hover g {
-  fill: #0065ff;
-}
 
-/*# sourceMappingURL=main.css.map */
+  p {
+    margin: 0;
+  }
+
+  svg {
+    margin-right: 18px;
+
+    g {
+      transition: 200ms;
+    }
+
+    &:hover g {
+      fill: #0065ff;
+    }
+  }
+}
