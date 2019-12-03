@@ -19,3 +19,27 @@ let countDown = new Date("Dec 31, 2019 00:00:00").getTime(),
         (distance % minute) / second
       ));
   }, second);
+
+$(function() {
+
+  ScrollReveal().reveal(".icons", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 1e3,
+    interval: 80,
+    delay: 30,
+  });
+
+  ScrollReveal().reveal(".sponsors__brand", {
+    origin: "bottom",
+    distance: "10px",
+    duration: 1e3,
+    interval: 50,
+    delay: 80,
+  });
+
+
+  
+
+
+});
