@@ -37,6 +37,12 @@ a:hover {
   padding: 5.313rem 0;
 }
 
+@media (max-width: 992px) {
+  .section {
+    padding: 2.313rem 0;
+  }
+}
+
 /* colors */
 
 .background-light {
@@ -56,7 +62,7 @@ a:hover {
 
 .hero__bg {
   width: 60%;
-  height: 160%;
+  height: 180%;
   top: 0;
   left: 0;
   background: url(../image/hero.png);
@@ -100,8 +106,7 @@ a:hover {
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-  padding-left: 5rem;
-  margin-top: 10rem;
+  margin-top: 10.5rem;
 }
 
 @media (max-width: 720px) {
@@ -148,12 +153,33 @@ a:hover {
   }
 
   .hero__bg {
-    width: 100%;
-    height: 60%;
+    width: 95%;
+    height: 40%;
   }
 }
- 
 
+@media (max-width: 992px) {
+  .hero__title {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__title {
+    float: right;
+  }
+  .hero__bg {
+    width: 60%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__bg {
+    width: 60%;
+    height: 180%;
+  }
+}
 
 /* form */
 
@@ -613,6 +639,10 @@ input:-webkit-autofill:active {
   .sponsors__title {
     padding-bottom: 0;
   }
+
+  .info__title-secondary {
+    font-size: 1.475rem;
+  }
 }
 
 /* icons */
@@ -651,6 +681,8 @@ input:-webkit-autofill:active {
 @media (max-width: 992px) {
   .icons img {
     margin-top: 1.5rem;
+    width: 4.313rem;
+    height: 4.313rem;
   }
 }
 

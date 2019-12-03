@@ -1,5 +1,3 @@
-
-
 const second = 1000,
   minute = second * 60,
   hour = minute * 60,
@@ -21,4 +19,3 @@ let countDown = new Date("Dec 31, 2019 00:00:00").getTime(),
         (distance % minute) / second
       ));
   }, second);
-
