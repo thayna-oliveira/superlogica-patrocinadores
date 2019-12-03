@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'IntegralCF-xBold';
+	src: url('../fonts/Integral-CF-Extra-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* base */
 
 html,
@@ -102,18 +109,24 @@ a:hover {
 }
 
 .hero__title .line-1 {
-  font-family: "IntegralCF-Heavy";
+  font-family: "IntegralCF-xBold";
   display: block;
   clear: both;
   text-align: left;
 }
 
 .hero__title .line-2 {
-  font-family: "IntegralCF-Heavy";
+  font-family: "IntegralCF-xBold";
   display: block;
   clear: both;
 
   text-align: right;
+}
+
+@media (min-width: 720px) {
+  .hero__title {
+    font-size: 3.688rem;
+  }
 }
 
 @media (max-width: 720px) {
@@ -135,7 +148,7 @@ a:hover {
   }
 
   .hero__title {
-    font-size: 1.875rem;
+    font-size: 2.15rem;
     padding-left: 0;
     margin-top: 12rem;
     text-align: right;
@@ -150,23 +163,20 @@ a:hover {
   .hero {
     min-height: auto;
     padding-bottom: 4rem;
-  }
+  } 
 
   .hero__title .line-1 {
     text-align: right;
   }
 }
-
-@media (max-width: 992px) {
-  .hero__title {
-    text-align: right;
-  }
-}
-
+ 
 @media (min-width: 992px) {
+
+
   .hero__title {
-    float: right;
+    font-size: 4.688rem; 
   }
+
 
   .hero__bg {
     width: 100%;
@@ -177,12 +187,19 @@ a:hover {
     clip-path: polygon(65% 0, 0 0, 0 100%);
   }
 
+
   .hero__title .line-1 {
     text-align: right;
   }
 }
 
 @media (min-width: 1200px) {
+
+  .hero__title {
+    font-size: 4.688rem; 
+    float: right;
+  }
+
   .hero__bg {
     width: 70%;
     height: 180%;
