@@ -1,8 +1,8 @@
 @font-face {
-	font-family: 'IntegralCF-xBold';
-	src: url('../fonts/Integral-CF-Extra-Bold.otf');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "IntegralCF-xBold";
+  src: url("../fonts/Integral-CF-Extra-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* base */
@@ -163,20 +163,17 @@ a:hover {
   .hero {
     min-height: auto;
     padding-bottom: 4rem;
-  } 
+  }
 
   .hero__title .line-1 {
     text-align: right;
   }
 }
- 
+
 @media (min-width: 992px) {
-
-
   .hero__title {
-    font-size: 4.688rem; 
+    font-size: 4.688rem;
   }
-
 
   .hero__bg {
     width: 100%;
@@ -187,16 +184,14 @@ a:hover {
     clip-path: polygon(65% 0, 0 0, 0 100%);
   }
 
-
   .hero__title .line-1 {
     text-align: right;
   }
 }
 
 @media (min-width: 1200px) {
-
   .hero__title {
-    font-size: 4.688rem; 
+    font-size: 4.688rem;
     float: right;
   }
 
@@ -761,47 +756,50 @@ input:-webkit-autofill:active {
   background-color: #300829;
   text-align: center;
   margin: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
 }
 
 .countdown__time {
   font-size: 3.688rem;
   font-weight: bold;
-  line-height: 1.33;
   letter-spacing: normal;
   color: #f3d2cb;
+  
 }
 
 .countdown__description {
   font-size: 15.4px;
   font-weight: bold;
   font-style: normal;
-  line-height: 1.33;
   letter-spacing: 0.034rem;
   color: #ff7a6a;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 992px) {
   .countdown {
-    padding-top: 0.45rem;
+    padding-top: 1.085rem;
   }
 
   .countdown__box {
-    height: 5.5rem;
+    height: 4.85rem;
   }
 
   .countdown__time {
-    font-size: 2.488rem;
-    line-height: 1.4;
+    font-size: 2.088rem;
   }
 
   .countdown__description {
     font-size: 0.788rem;
   }
-}
 
-@media (max-width: 992px) {
+  .countdown__title {
+    padding-top: 0.85rem;
+  }
 }
 
 /* social icons */
