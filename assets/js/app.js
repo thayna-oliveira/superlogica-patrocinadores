@@ -52,26 +52,28 @@ $(function() {
     interval: 80,
     delay: 30,
   });
-});
 
-var $slide = $(".slider");
+  var $slide = $(".slider");
 
-$(window).resize(function() {
-  var $windowWidth = $(document).width();
-  if ($windowWidth < 992) {
-    if ($slide.hasClass("slick-initialized")) {
-      $slide.slick("unslick");
+  $(window).resize(function() {
+    var $windowWidth = $(document).width();
+    if ($windowWidth < 992) {
+      if ($slide.hasClass("slick-initialized")) {
+        $slide.slick("unslick");
+      }
+      $slide.slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+      });
+    } else {
+      if ($slide.hasClass("slick-initialized")) {
+        $slide.slick("unslick");
+      }
     }
-    $slide.slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-    });
-  } else {
-    $slide.slick("unslick");
-  }
+  });
 });
