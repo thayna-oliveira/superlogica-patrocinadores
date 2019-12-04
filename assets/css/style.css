@@ -52,6 +52,38 @@ a:hover {
 
 /* hero */
 
+.down-icon {
+  position: absolute;
+  bottom: 65px;
+  -webkit-animation: anime 5s;
+  animation: anime 0.8s infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 400ms;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} 
+
+@media (max-width: 992px) {
+  .down-icon { 
+    display: none;
+  }
+}
+
+
+
 .hero {
   min-height: 90vh;
   height: 100%;
@@ -745,48 +777,45 @@ input:-webkit-autofill:active {
   letter-spacing: 0.05rem;
   text-align: center;
   color: #fcfcfc;
-  padding-top: 1.8rem;
+  padding-top: 1.2rem;
 }
 
 .countdown__box {
+  padding: 0.34rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 33%;
-  height: 6.5rem;
   border-radius: 4px;
   box-shadow: 0 4px 6px 2px rgba(48, 8, 41, 0.25);
   background-color: #300829;
-  text-align: center;
-  margin: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
-  justify-content: center;
+  margin: 0.6rem;
 }
 
 .countdown__time {
-  font-size: 3.688rem;
+  font-size: 3.488rem;
   font-weight: bold;
   letter-spacing: normal;
   color: #f3d2cb;
-  
+  text-align: center;
 }
 
 .countdown__description {
-  font-size: 15.4px;
+  font-size: 14.6px;
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0.034rem;
   color: #ff7a6a;
   text-align: center;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  transform: translateY(-5px);
+  height: 20px;
 }
 
 @media (max-width: 992px) {
   .countdown {
     padding-top: 1.085rem;
-  }
-
-  .countdown__box {
-    height: 4.85rem;
   }
 
   .countdown__time {
@@ -811,8 +840,8 @@ input:-webkit-autofill:active {
 }
 
 .social-icons img {
-  max-width: 2.188rem;
-  max-height: 2.188rem;
+  max-width: 2.055rem;
+  max-height: 2.055rem;
   margin: 0.875rem;
 }
 

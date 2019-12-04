@@ -21,6 +21,21 @@ let countDown = new Date("Dec 31, 2019 00:00:00").getTime(),
   }, second);
 
 $(function() {
+  ScrollReveal().reveal(".info", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 1e3,
+    interval: 80,
+    delay: 30,
+  });
+
+  ScrollReveal().reveal(".form", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 1e3,
+    interval: 80,
+    delay: 30,
+  });
 
   ScrollReveal().reveal(".icons", {
     origin: "bottom",
@@ -30,16 +45,33 @@ $(function() {
     delay: 30,
   });
 
-  ScrollReveal().reveal(".sponsors__brand", {
+  ScrollReveal().reveal(".contact", {
     origin: "bottom",
-    distance: "10px",
+    distance: "20px",
     duration: 1e3,
-    interval: 50,
-    delay: 80,
+    interval: 80,
+    delay: 30,
   });
+});
 
+var $slide = $(".slider");
 
-  
-
-
+$(window).resize(function() {
+  var $windowWidth = $(document).width();
+  if ($windowWidth < 992) {
+    if ($slide.hasClass("slick-initialized")) {
+      $slide.slick("unslick");
+    }
+    $slide.slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+    });
+  } else {
+    $slide.slick("unslick");
+  }
 });
