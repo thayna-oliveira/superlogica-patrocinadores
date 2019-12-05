@@ -48,6 +48,11 @@ a:hover {
 .section {
   padding: 4.75rem 0;
 }
+@media (max-width: 992px) {
+  .section {
+    padding: 3.15rem 0;
+  }
+}
 
 /* colors */
 
@@ -608,6 +613,12 @@ input:-webkit-autofill:active {
   padding-top: 3.438rem;
 }
 
+@media (max-width: 992px) {
+  .info__title {
+    font-size: 1.488rem;
+  }
+}
+
 /* sponsors and contacts */
 
 .sponsors__title,
@@ -662,12 +673,19 @@ input:-webkit-autofill:active {
 
 @media (max-width: 720px) {
   .sponsors__title,
-  .contact__title {
+  .contact__title,
+  .price__title {
     font-size: 1.475rem;
   }
 
   .info__title-secondary {
     font-size: 1.475rem;
+    padding-top: 1.5rem;
+  }
+
+  .price__description,
+  .contact__description {
+    font-size: 0.93rem;
   }
 }
 
@@ -709,6 +727,12 @@ input:-webkit-autofill:active {
     margin-top: 1.5rem;
     width: 4.313rem;
     height: 4.313rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .icons__description {
+    padding: 1.09rem 1.8rem 1.07rem;
   }
 }
 
@@ -905,5 +929,11 @@ input:-webkit-autofill:active {
   .youtube .play-button:before {
     border-width: 10px 0 10px 20px;
     margin-left: 2px;
+  }
+}
+
+@media (max-width: 720px) {
+  .youtube {
+    margin-bottom: 0.563rem;
   }
 }
