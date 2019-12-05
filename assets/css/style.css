@@ -163,7 +163,7 @@ a:hover {
   }
 
   .hero__title {
-    font-size: 2.575rem;
+    font-size: 2.375rem;
     padding-left: 0;
     margin-top: 8rem;
     text-align: right;
@@ -234,7 +234,7 @@ a:hover {
 
 @media (max-width: 720px) {
   .form {
-    margin-top: -21.5rem;
+    margin-top: -20.5rem;
     margin-bottom: 1.85rem;
   }
 }
@@ -677,6 +677,10 @@ input:-webkit-autofill:active {
   .price__title {
     font-size: 1.475rem;
   }
+
+  .sponsors__title {
+    padding-bottom: .65rem;
+}
 
   .info__title-secondary {
     font-size: 1.475rem;
