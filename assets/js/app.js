@@ -1,26 +1,30 @@
-const second = 1000,
-  minute = second * 60,
-  hour = minute * 60,
-  day = hour * 24;
+function youtubeEmbed() {
+  for (
+    var e = document.querySelectorAll(".youtube"), t = 0;
+    t < e.length;
+    t++
+  ) {
+    var d = new Image();
+    (d.src = "https://img.youtube.com/vi/MWjMRq7boc4/sddefault.jpg"),
+      d.addEventListener("load", void e[t].appendChild(d)),
+      e[t].addEventListener("click", function() {
+        var e = document.createElement("iframe");
+        e.setAttribute("frameborder", "0"),
+          e.setAttribute("allowfullscreen", ""),
+          e.setAttribute(
+            "src",
+            "https://www.youtube.com/embed/" +
+              this.dataset.embed +
+              "?rel=0&showinfo=0&autoplay=1"
+          ),
+          e.setAttribute("allow", "autoplay; encrypted-media;"),
+          (this.innerHTML = ""),
+          this.appendChild(e);
+      });
+  }
+}
 
-let countDown = new Date("Dec 31, 2019 00:00:00").getTime(),
-  x = setInterval(function() {
-    let now = new Date().getTime(),
-      distance = countDown - now;
-
-    (document.getElementById("days").innerText = Math.floor(distance / day)),
-      (document.getElementById("hours").innerText = Math.floor(
-        (distance % day) / hour
-      )),
-      (document.getElementById("minutes").innerText = Math.floor(
-        (distance % hour) / minute
-      )),
-      (document.getElementById("seconds").innerText = Math.floor(
-        (distance % minute) / second
-      ));
-  }, second);
-
-$(function() {
+$(document).ready(function() {
   ScrollReveal().reveal(".info", {
     origin: "bottom",
     distance: "20px",
@@ -76,4 +80,6 @@ $(function() {
       }
     }
   });
+
+  youtubeEmbed();
 });
