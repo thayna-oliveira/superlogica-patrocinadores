@@ -5,7 +5,7 @@ function youtubeEmbed() {
     t++
   ) {
     var d = new Image();
-    (d.src = "https://img.youtube.com/vi/MWjMRq7boc4/sddefault.jpg"),
+    
       d.addEventListener("load", void e[t].appendChild(d)),
       e[t].addEventListener("click", function() {
         var e = document.createElement("iframe");

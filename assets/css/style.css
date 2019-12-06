@@ -46,8 +46,9 @@ a:hover {
 /* section */
 
 .section {
-  padding: 4.75rem 0;
+  padding: 3.95rem 0;
 }
+
 @media (max-width: 992px) {
   .section {
     padding: 3.15rem 0;
@@ -63,10 +64,9 @@ a:hover {
 /* hero */
 
 .hero {
-  min-height: 90vh;
+  min-height: 80vh;
   height: 100%;
   position: relative;
-  padding-bottom: 5rem;
   background: url(../image/hero.png);
   background-position: top center;
   background-size: cover;
@@ -74,15 +74,15 @@ a:hover {
 
 .hero__bg {
   width: 70%;
-  height: 190%;
+  height: 170%;
+  -webkit-clip-path: polygon(90% 0, 0 0, 0 100%);
+  clip-path: polygon(90% 0, 0 0, 0 100%);
   top: 0;
   left: 0;
   background-color: #ff3d35;
   position: absolute;
   background-position: center top;
   background-size: cover;
-  -webkit-clip-path: polygon(90% 0, 0 0, 0 100%);
-  clip-path: polygon(90% 0, 0 0, 0 100%);
 }
 
 .bg__noise {
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .hero__title {
-  font-size: 3.891rem;
+  font-size: 4.55rem;
   font-weight: 900;
   font-stretch: normal;
   line-height: normal;
@@ -147,9 +147,13 @@ a:hover {
 @media (min-width: 1200px) {
   .hero__bg {
     width: 70%;
-    height: 190%;
+    height: 170%;
     -webkit-clip-path: polygon(90% 0, 0 0, 0 100%);
     clip-path: polygon(90% 0, 0 0, 0 100%);
+  }
+
+  .hero__title {
+    margin-top: 5.3rem;
   }
 }
 
@@ -198,7 +202,7 @@ a:hover {
 
 .hs-button {
   border-radius: 4px;
-  box-shadow: 0 15px 15px -15px #300829;
+  box-shadow: 0 15px 15px -15px #3f3fb8;
   background-color: #3f3fb8;
   padding: 0;
   color: #fff;
@@ -209,7 +213,7 @@ a:hover {
 }
 
 .hs-button:hover {
-  box-shadow: 0 15px 15px -15px #300829;
+  box-shadow: 0 15px 15px -15px #3f3fb8;
   background-color: #3f3fb8;
   transform: translateY(-2px);
 }
@@ -259,7 +263,7 @@ a:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 3.125rem;
+  padding-top: 3.5rem;
 }
 
 .nav img {
@@ -270,7 +274,7 @@ a:hover {
   background-image: url(../brand/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 95px;
+  height: 75px;
 }
 
 @media (max-width: 720px) {
@@ -287,12 +291,6 @@ a:hover {
 @media (max-width: 992px) {
   .brand {
     height: 55px;
-  }
-}
-
-@media (min-width: 1300px) {
-  .brand {
-    transform: translateX(-5%);
   }
 }
 
@@ -392,7 +390,7 @@ input:focus {
 }
 
 .button-primary {
-  box-shadow: 0 15px 15px -15px #300829;
+  box-shadow: 0 15px 15px -15px #3f3fb8;
   background-color: #3f3fb8;
   color: #fff;
   text-transform: none;
@@ -419,7 +417,7 @@ input:focus {
 
 .button-primary:hover {
   color: #fff;
-  box-shadow: 0 15px 15px -15px #300829;
+  box-shadow: 0 15px 15px -15px #3f3fb8;
   background-color: #3f3fb8;
   transform: translateY(-2px);
 }
@@ -679,8 +677,8 @@ input:-webkit-autofill:active {
   }
 
   .sponsors__title {
-    padding-bottom: .65rem;
-}
+    padding-bottom: 0.65rem;
+  }
 
   .info__title-secondary {
     font-size: 1.475rem;
@@ -874,7 +872,7 @@ input:-webkit-autofill:active {
 
 .youtube img {
   width: 100%;
-  top: -16.82%;
+  top: -5%;
   left: 0;
 }
 
@@ -882,16 +880,11 @@ input:-webkit-autofill:active {
   width: 100px;
   height: 100px;
   background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   z-index: 1;
   opacity: 1;
   border-radius: 100%;
-  box-shadow: -1px 7px 20px 0px #0e0e0e;
+  box-shadow: 0px 18px 60px -10px #0e0e0e;
   transition: 0.2s;
-}
-
-.youtube .play-button:hover {
-  box-shadow: 1px 16px 20px -5px #232322;
 }
 
 .youtube .play-button:before {
